@@ -12,6 +12,7 @@
 		3D70EC5A2257F5D60005A48D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D70EC582257F5D60005A48D /* Main.storyboard */; };
 		3D70EC5C2257F5D80005A48D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D70EC5B2257F5D80005A48D /* Assets.xcassets */; };
 		3D70EC5F2257F5D80005A48D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D70EC5D2257F5D80005A48D /* LaunchScreen.storyboard */; };
+		F3BEFF1D4E0069F9E49D90E4 /* Pods_GrabAndDine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF86ED5EA91D5798F137A380 /* Pods_GrabAndDine.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		3D70EC5B2257F5D80005A48D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D70EC5E2257F5D80005A48D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D70EC602257F5D80005A48D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCDE9FE04D81754FC8FC05F5 /* Pods-GrabAndDine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrabAndDine.release.xcconfig"; path = "Target Support Files/Pods-GrabAndDine/Pods-GrabAndDine.release.xcconfig"; sourceTree = "<group>"; };
+		DF86ED5EA91D5798F137A380 /* Pods_GrabAndDine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrabAndDine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2928F53409BCAD18BD6A855 /* Pods-GrabAndDine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrabAndDine.debug.xcconfig"; path = "Target Support Files/Pods-GrabAndDine/Pods-GrabAndDine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3BEFF1D4E0069F9E49D90E4 /* Pods_GrabAndDine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		069AED7DD0828A1962DE75A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF86ED5EA91D5798F137A380 /* Pods_GrabAndDine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1136A8C97C2E4ABDE0B540EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2928F53409BCAD18BD6A855 /* Pods-GrabAndDine.debug.xcconfig */,
+				CCDE9FE04D81754FC8FC05F5 /* Pods-GrabAndDine.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3D70EC482257F5D60005A48D = {
 			isa = PBXGroup;
 			children = (
 				3D70EC532257F5D60005A48D /* GrabAndDine */,
 				3D70EC522257F5D60005A48D /* Products */,
+				1136A8C97C2E4ABDE0B540EB /* Pods */,
+				069AED7DD0828A1962DE75A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D70EC632257F5D80005A48D /* Build configuration list for PBXNativeTarget "GrabAndDine" */;
 			buildPhases = (
+				DD5AA0FB6ED8476854AE79CA /* [CP] Check Pods Manifest.lock */,
 				3D70EC4D2257F5D60005A48D /* Sources */,
 				3D70EC4E2257F5D60005A48D /* Frameworks */,
 				3D70EC4F2257F5D60005A48D /* Resources */,
+				285D8DD1DEDE7FF4E3F540CC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		285D8DD1DEDE7FF4E3F540CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrabAndDine/Pods-GrabAndDine-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrabAndDine/Pods-GrabAndDine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD5AA0FB6ED8476854AE79CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GrabAndDine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D70EC4D2257F5D60005A48D /* Sources */ = {
@@ -280,6 +354,7 @@
 		};
 		3D70EC642257F5D80005A48D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2928F53409BCAD18BD6A855 /* Pods-GrabAndDine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +373,7 @@
 		};
 		3D70EC652257F5D80005A48D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCDE9FE04D81754FC8FC05F5 /* Pods-GrabAndDine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
