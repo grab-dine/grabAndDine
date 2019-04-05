@@ -25,7 +25,8 @@ Are you a picky eater that is sometime hard to find others has same taste as you
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
+* [User can create an account
+Username, Email, Password]
 * ...
 
 **Optional Nice-to-have Stories**
