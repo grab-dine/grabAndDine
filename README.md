@@ -1,6 +1,3 @@
-Group Project - README Template
-===
-
 # Grab & Dine
 
 ## Table of Contents
