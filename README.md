@@ -59,7 +59,6 @@ Are you a picky eater that is sometime hard to find others has same taste as you
   * User can log in
 * Sign in Screen
 * Sign up Screen
-* Load Screen
 * Home Screen
 * Side menu Screen
   * User can edit profile
@@ -73,12 +72,7 @@ Are you a picky eater that is sometime hard to find others has same taste as you
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Load Screen
 
 ## Wireframes
 <img src="http://g.recordit.co/62RoNiu1Y0.gif" width=300>
