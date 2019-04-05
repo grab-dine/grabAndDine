@@ -61,7 +61,7 @@ Are you a picky eater that is sometime hard to find others has same taste as you
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="http://g.recordit.co/62RoNiu1Y0.gif" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
