@@ -25,14 +25,21 @@ Are you a picky eater that is sometime hard to find others has same taste as you
 
 **Required Must-have Stories**
 
-* [User can create an account
-Username, Email, Password]
-* ...
+* User can create an account
+  * Username, Email, Password
+* User can log in
+* User can log out
+* User can edit their profile
+* User can view their top maches for that day
+* User can chat with their matches
+* User can view all chat histories
+
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* User can view restaurants recommendation based on their dietary restrictions
+* User can make a date
+* User can see a notification on google calendar after creating an appointment
 
 ### 2. Screen Archetypes
 
@@ -47,9 +54,22 @@ Username, Email, Password]
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Launch Screen
+  * User can create an account
+  * User can log in
+* Sign in Screen
+* Sign up Screen
+* Load Screen
+* Home Screen
+* Side menu Screen
+  * User can edit profile
+  * User can view chat history
+  * User can signout
+* Chat Screen
+  * User can chat with their top matches
+* Profile Screen
+  * User can edit their profile
+
 
 **Flow Navigation** (Screen to Screen)
 
