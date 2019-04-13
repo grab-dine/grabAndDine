@@ -7,5 +7,5 @@ target 'GrabAndDine' do
 
   # Pods for GrabAndDine	
   pod 'Alamofire'
-
+  pod 'FLAnimatedImage'
 end
