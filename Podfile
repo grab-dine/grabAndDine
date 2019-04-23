@@ -7,5 +7,9 @@ target 'GrabAndDine' do
 
   # Pods for GrabAndDine	
   pod 'Alamofire'
+<<<<<<< HEAD
 
+=======
+  pod 'FLAnimatedImage'
+>>>>>>> master
 end
