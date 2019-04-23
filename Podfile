@@ -1,20 +1,11 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'grabAndDine' do
+target 'GrabAndDine' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for grabAndDine
+  # Pods for GrabAndDine	
   pod 'Alamofire'
-  target 'grabAndDineTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'grabAndDineUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
+  pod 'FLAnimatedImage'
 end
