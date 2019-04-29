@@ -26,6 +26,9 @@
 		3DF191CB226139190036AE97 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF191CA226139190036AE97 /* LoginViewController.swift */; };
 		3DF191CD226149A50036AE97 /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF191CC226149A50036AE97 /* LoadViewController.swift */; };
 		3DF191D0226151D20036AE97 /* load.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3DF191CF226151D20036AE97 /* load.gif */; };
+		B037C79022779F730024BC55 /* Chatting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B037C78F22779F730024BC55 /* Chatting.storyboard */; };
+		B037C7952277A0130024BC55 /* ChattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B037C7942277A0130024BC55 /* ChattingViewController.swift */; };
+		B037C79B2277A2CE0024BC55 /* SocketIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B037C79A2277A2CE0024BC55 /* SocketIO.swift */; };
 		F3BEFF1D4E0069F9E49D90E4 /* Pods_GrabAndDine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF86ED5EA91D5798F137A380 /* Pods_GrabAndDine.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +54,9 @@
 		3DF191CA226139190036AE97 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3DF191CC226149A50036AE97 /* LoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
 		3DF191CF226151D20036AE97 /* load.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load.gif; sourceTree = "<group>"; };
+		B037C78F22779F730024BC55 /* Chatting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chatting.storyboard; sourceTree = "<group>"; };
+		B037C7942277A0130024BC55 /* ChattingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
+		B037C79A2277A2CE0024BC55 /* SocketIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIO.swift; sourceTree = "<group>"; };
 		CCDE9FE04D81754FC8FC05F5 /* Pods-GrabAndDine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrabAndDine.release.xcconfig"; path = "Target Support Files/Pods-GrabAndDine/Pods-GrabAndDine.release.xcconfig"; sourceTree = "<group>"; };
 		DF86ED5EA91D5798F137A380 /* Pods_GrabAndDine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrabAndDine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2928F53409BCAD18BD6A855 /* Pods-GrabAndDine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrabAndDine.debug.xcconfig"; path = "Target Support Files/Pods-GrabAndDine/Pods-GrabAndDine.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +123,9 @@
 				3DF191CF226151D20036AE97 /* load.gif */,
 				3DF19191225EB2300036AE97 /* Fonts */,
 				3D08C25622654B860007CEEE /* HomeViewController.swift */,
+				B037C78F22779F730024BC55 /* Chatting.storyboard */,
+				B037C7942277A0130024BC55 /* ChattingViewController.swift */,
+				B037C79A2277A2CE0024BC55 /* SocketIO.swift */,
 			);
 			path = GrabAndDine;
 			sourceTree = "<group>";
@@ -172,6 +181,7 @@
 				TargetAttributes = {
 					3D70EC502257F5D60005A48D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -207,6 +217,7 @@
 				3DF191D0226151D20036AE97 /* load.gif in Resources */,
 				3DF191BF225EB5DD0036AE97 /* OpenSans-BoldItalic.ttf in Resources */,
 				3DF191B7225EB3130036AE97 /* OpenSans-Light.ttf in Resources */,
+				B037C79022779F730024BC55 /* Chatting.storyboard in Resources */,
 				3DF191B9225EB3130036AE97 /* OpenSans-Regular.ttf in Resources */,
 				3DF191C5225EB5FA0036AE97 /* OpenSans-Italic.ttf in Resources */,
 				3DF191C3225EB5F30036AE97 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
@@ -229,6 +240,8 @@
 				"${PODS_ROOT}/Target Support Files/Pods-GrabAndDine/Pods-GrabAndDine-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -236,6 +249,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -271,6 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B037C7952277A0130024BC55 /* ChattingViewController.swift in Sources */,
+				B037C79B2277A2CE0024BC55 /* SocketIO.swift in Sources */,
 				3D08C25722654B860007CEEE /* HomeViewController.swift in Sources */,
 				3DF191CB226139190036AE97 /* LoginViewController.swift in Sources */,
 				3DF191C92261387D0036AE97 /* InnitialViewController.swift in Sources */,
@@ -422,6 +439,7 @@
 			baseConfigurationReference = F2928F53409BCAD18BD6A855 /* Pods-GrabAndDine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PPZZ7DWFWF;
 				INFOPLIST_FILE = GrabAndDine/Info.plist;
@@ -431,6 +449,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Rae.GrabAndDine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,6 +460,7 @@
 			baseConfigurationReference = CCDE9FE04D81754FC8FC05F5 /* Pods-GrabAndDine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PPZZ7DWFWF;
 				INFOPLIST_FILE = GrabAndDine/Info.plist;

@@ -18,17 +18,17 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-//    If allow consistance login, then uncomment the following code
-//    override func viewDidAppear(_ animated: Bool) {
-//
-//        if UserDefaults.standard.bool(forKey: "userLoggedIn") == true{
-//            self.performSegue(withIdentifier: "loginToMatching", sender: self)
-//        }
-//    }
+    //If allow consistance login, then uncomment the following code
+    override func viewDidAppear(_ animated: Bool) {
+
+        if UserDefaults.standard.bool(forKey: "userLoggedIn") == true{
+            self.performSegue(withIdentifier: "loginToMatching", sender: self)
+        }
+    }
 
     @IBAction func onTapLogin(_ sender: Any) {
-        let authUrl = "https://grabanddine.herokuapp.com/auth/login"
-        //let authUrl = "http://localhost:5000/auth/login"
+        //let authUrl = "https://grabanddine.herokuapp.com/auth/login"
+        let authUrl = "http://localhost:5000/auth/login"
         let headers = [
             "Content-Type": "application/x-www-form-urlencoded"
         ]

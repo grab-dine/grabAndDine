@@ -8,4 +8,5 @@ target 'GrabAndDine' do
   # Pods for GrabAndDine	
   pod 'Alamofire'
   pod 'FLAnimatedImage'
+  pod 'Socket.IO-Client-Swift', '~> 15.0.0'
 end
