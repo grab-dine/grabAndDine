@@ -18,22 +18,98 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaP-qn-Mzh">
-                                <rect key="frame" x="73" y="377" width="238" height="295"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fpY-DI-suk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="760"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="onTap:" destination="s4T-uM-2B9" eventType="touchUpInside" id="LIS-ZY-mkX"/>
-                                </connections>
-                            </button>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCell" rowHeight="125" id="VOb-LY-0I3" customClass="MessageCell" customModule="GrabAndDine" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="125"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VOb-LY-0I3" id="jfF-ye-fza">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="124.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chatButton" translatesAutoresizingMaskIntoConstraints="NO" id="O7X-k4-Dje" userLabel="selfImgPlaceholder">
+                                                    <rect key="frame" x="8" y="8" width="87" height="108.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="I send to X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFi-tR-2j9" userLabel="selfLabelView">
+                                                    <rect key="frame" x="103" y="8" width="82" height="108.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chatButton" translatesAutoresizingMaskIntoConstraints="NO" id="8Na-dS-wkW" userLabel="userImgPlaceholder">
+                                                    <rect key="frame" x="319" y="8" width="87" height="108.5"/>
+                                                </imageView>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Another user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgH-bS-MvL" userLabel="userLabelView">
+                                                    <rect key="frame" x="211.5" y="8" width="99.5" height="108.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uFi-tR-2j9" firstAttribute="top" secondItem="jfF-ye-fza" secondAttribute="top" constant="8" id="1Xb-EB-8HS"/>
+                                                <constraint firstAttribute="bottom" secondItem="8Na-dS-wkW" secondAttribute="bottom" constant="8" id="9kn-iE-hcO"/>
+                                                <constraint firstItem="8Na-dS-wkW" firstAttribute="leading" secondItem="FgH-bS-MvL" secondAttribute="trailing" constant="8" id="B7K-3c-ujY"/>
+                                                <constraint firstItem="FgH-bS-MvL" firstAttribute="top" secondItem="jfF-ye-fza" secondAttribute="top" constant="8" id="QeV-Ze-c6O"/>
+                                                <constraint firstItem="O7X-k4-Dje" firstAttribute="leading" secondItem="jfF-ye-fza" secondAttribute="leading" constant="8" id="R0g-m6-kZB"/>
+                                                <constraint firstAttribute="bottom" secondItem="uFi-tR-2j9" secondAttribute="bottom" constant="8" id="R8c-j9-Wxq"/>
+                                                <constraint firstAttribute="bottom" secondItem="O7X-k4-Dje" secondAttribute="bottom" constant="8" id="SF1-QA-Gir"/>
+                                                <constraint firstAttribute="trailing" secondItem="8Na-dS-wkW" secondAttribute="trailing" constant="8" id="YW4-cB-vEy"/>
+                                                <constraint firstItem="O7X-k4-Dje" firstAttribute="top" secondItem="jfF-ye-fza" secondAttribute="top" constant="8" id="a00-Tj-l5X"/>
+                                                <constraint firstItem="uFi-tR-2j9" firstAttribute="leading" secondItem="O7X-k4-Dje" secondAttribute="trailing" constant="8" id="mBc-Ey-h17"/>
+                                                <constraint firstAttribute="bottom" secondItem="FgH-bS-MvL" secondAttribute="bottom" constant="8" id="me0-af-fpv"/>
+                                                <constraint firstItem="8Na-dS-wkW" firstAttribute="top" secondItem="jfF-ye-fza" secondAttribute="top" constant="8" id="xRP-HG-gr7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="selfMessageImage" destination="O7X-k4-Dje" id="gQm-Ba-tWm"/>
+                                            <outlet property="selfMessageLabel" destination="uFi-tR-2j9" id="IzQ-Eg-bah"/>
+                                            <outlet property="userMessageImage" destination="8Na-dS-wkW" id="2N3-vO-Xei"/>
+                                            <outlet property="userMessageLabel" destination="FgH-bS-MvL" id="TG4-Ya-kug"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5hP-7A-HJk">
+                                <rect key="frame" x="0.0" y="768" width="414" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fow-ko-ZaF">
+                                        <rect key="frame" x="332" y="24" width="74" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Send"/>
+                                        <connections>
+                                            <action selector="onTap:" destination="s4T-uM-2B9" eventType="touchUpInside" id="8TY-NL-19k"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Type your message here" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Adn-EN-A3T">
+                                        <rect key="frame" x="8" y="32" width="316" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Za1-nl-XHg"/>
                     </view>
+                    <connections>
+                        <outlet property="chatTable" destination="fpY-DI-suk" id="5ls-xA-fox"/>
+                        <outlet property="userTextField" destination="Adn-EN-A3T" id="ebo-ub-asg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dLt-4L-l3K" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="128.98550724637681" y="94.419642857142847"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chatButton" width="87" height="87"/>
+    </resources>
 </document>

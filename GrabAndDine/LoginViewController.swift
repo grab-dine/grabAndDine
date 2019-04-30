@@ -60,6 +60,7 @@ class LoginViewController: UIViewController {
                         let response = json["response"] as! [String: Any]
                         
                         //user object stored as global variable
+                     
                         UserDefaults.standard.set(response, forKey: "userObject")
                         UserDefaults.standard.set(true, forKey: "userLoggedIn")
                         

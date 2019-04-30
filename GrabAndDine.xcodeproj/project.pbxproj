@@ -29,6 +29,7 @@
 		B037C79022779F730024BC55 /* Chatting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B037C78F22779F730024BC55 /* Chatting.storyboard */; };
 		B037C7952277A0130024BC55 /* ChattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B037C7942277A0130024BC55 /* ChattingViewController.swift */; };
 		B037C79B2277A2CE0024BC55 /* SocketIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B037C79A2277A2CE0024BC55 /* SocketIO.swift */; };
+		B037C79D2278CC150024BC55 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B037C79C2278CC150024BC55 /* MessageCell.swift */; };
 		F3BEFF1D4E0069F9E49D90E4 /* Pods_GrabAndDine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF86ED5EA91D5798F137A380 /* Pods_GrabAndDine.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		B037C78F22779F730024BC55 /* Chatting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chatting.storyboard; sourceTree = "<group>"; };
 		B037C7942277A0130024BC55 /* ChattingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
 		B037C79A2277A2CE0024BC55 /* SocketIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIO.swift; sourceTree = "<group>"; };
+		B037C79C2278CC150024BC55 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		CCDE9FE04D81754FC8FC05F5 /* Pods-GrabAndDine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrabAndDine.release.xcconfig"; path = "Target Support Files/Pods-GrabAndDine/Pods-GrabAndDine.release.xcconfig"; sourceTree = "<group>"; };
 		DF86ED5EA91D5798F137A380 /* Pods_GrabAndDine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrabAndDine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2928F53409BCAD18BD6A855 /* Pods-GrabAndDine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrabAndDine.debug.xcconfig"; path = "Target Support Files/Pods-GrabAndDine/Pods-GrabAndDine.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				B037C78F22779F730024BC55 /* Chatting.storyboard */,
 				B037C7942277A0130024BC55 /* ChattingViewController.swift */,
 				B037C79A2277A2CE0024BC55 /* SocketIO.swift */,
+				B037C79C2278CC150024BC55 /* MessageCell.swift */,
 			);
 			path = GrabAndDine;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B037C7952277A0130024BC55 /* ChattingViewController.swift in Sources */,
+				B037C79D2278CC150024BC55 /* MessageCell.swift in Sources */,
 				B037C79B2277A2CE0024BC55 /* SocketIO.swift in Sources */,
 				3D08C25722654B860007CEEE /* HomeViewController.swift in Sources */,
 				3DF191CB226139190036AE97 /* LoginViewController.swift in Sources */,
