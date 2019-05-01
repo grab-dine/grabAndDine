@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (4.8.2)
   - FLAnimatedImage (1.0.12)
+  - TextFieldEffects (1.5.1)
 
 DEPENDENCIES:
   - Alamofire
   - FLAnimatedImage
+  - TextFieldEffects
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - FLAnimatedImage
+    - TextFieldEffects
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  TextFieldEffects: 7d372f58aeaf9acd9626bbf962680aef926b085d
 
-PODFILE CHECKSUM: 3c20b03cf26b10fcb64543e3adffe1081fe8303d
+PODFILE CHECKSUM: b9a50b9d3cf16d09a83e0c8de27fb88aab39fb49
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.6.0

@@ -26,6 +26,8 @@
 		3DF191CB226139190036AE97 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF191CA226139190036AE97 /* LoginViewController.swift */; };
 		3DF191CD226149A50036AE97 /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF191CC226149A50036AE97 /* LoadViewController.swift */; };
 		3DF191D0226151D20036AE97 /* load.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3DF191CF226151D20036AE97 /* load.gif */; };
+		731464EA2278D7E5004BF885 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731464E92278D7E5004BF885 /* SignUpViewController.swift */; };
+		738D38902277FEB800019ACF /* Features_Kim.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738D388F2277FEB800019ACF /* Features_Kim.storyboard */; };
 		F3BEFF1D4E0069F9E49D90E4 /* Pods_GrabAndDine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF86ED5EA91D5798F137A380 /* Pods_GrabAndDine.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,8 @@
 		3DF191CA226139190036AE97 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3DF191CC226149A50036AE97 /* LoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
 		3DF191CF226151D20036AE97 /* load.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load.gif; sourceTree = "<group>"; };
+		731464E92278D7E5004BF885 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		738D388F2277FEB800019ACF /* Features_Kim.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Features_Kim.storyboard; sourceTree = "<group>"; };
 		CCDE9FE04D81754FC8FC05F5 /* Pods-GrabAndDine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrabAndDine.release.xcconfig"; path = "Target Support Files/Pods-GrabAndDine/Pods-GrabAndDine.release.xcconfig"; sourceTree = "<group>"; };
 		DF86ED5EA91D5798F137A380 /* Pods_GrabAndDine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrabAndDine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2928F53409BCAD18BD6A855 /* Pods-GrabAndDine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrabAndDine.debug.xcconfig"; path = "Target Support Files/Pods-GrabAndDine/Pods-GrabAndDine.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,7 +112,9 @@
 			children = (
 				3D70EC542257F5D60005A48D /* AppDelegate.swift */,
 				3D70EC582257F5D60005A48D /* Main.storyboard */,
+				738D388F2277FEB800019ACF /* Features_Kim.storyboard */,
 				3DF191C82261387D0036AE97 /* InnitialViewController.swift */,
+				731464E92278D7E5004BF885 /* SignUpViewController.swift */,
 				3DF191CA226139190036AE97 /* LoginViewController.swift */,
 				3DF191CC226149A50036AE97 /* LoadViewController.swift */,
 				3D70EC5B2257F5D80005A48D /* Assets.xcassets */,
@@ -200,6 +206,7 @@
 			files = (
 				3DF191BD225EB5D00036AE97 /* OpenSans-SemiBoldItalic.ttf in Resources */,
 				3D70EC5F2257F5D80005A48D /* LaunchScreen.storyboard in Resources */,
+				738D38902277FEB800019ACF /* Features_Kim.storyboard in Resources */,
 				3DF191BB225EB31D0036AE97 /* OpenSans-SemiBold.ttf in Resources */,
 				3DF191B6225EB3130036AE97 /* OpenSans-Bold.ttf in Resources */,
 				3D70EC5C2257F5D80005A48D /* Assets.xcassets in Resources */,
@@ -229,6 +236,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-GrabAndDine/Pods-GrabAndDine-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -236,6 +244,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -271,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				731464EA2278D7E5004BF885 /* SignUpViewController.swift in Sources */,
 				3D08C25722654B860007CEEE /* HomeViewController.swift in Sources */,
 				3DF191CB226139190036AE97 /* LoginViewController.swift in Sources */,
 				3DF191C92261387D0036AE97 /* InnitialViewController.swift in Sources */,
