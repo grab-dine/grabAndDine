@@ -15,6 +15,7 @@ class ChattingViewController: UIViewController, UITableViewDelegate, UITableView
     var messageArray = [NSDictionary]()
     var userID : String!
     
+    @IBOutlet weak var chatStatus: UILabel!
     @IBOutlet weak var chatTable: UITableView!
     let manager = SocketManager(socketURL: URL(string: "http://localhost:5000/channel")!, config: [.log(true), .compress])
     var socket:SocketIOClient!
@@ -36,8 +37,6 @@ class ChattingViewController: UIViewController, UITableViewDelegate, UITableView
         
         establishConnection()
 
-
-
     }
     
     
@@ -50,6 +49,11 @@ class ChattingViewController: UIViewController, UITableViewDelegate, UITableView
             
         }
     }
+    @IBAction func messageFieldChanged(_ sender: UITextField) {
+        
+        self.updateStatus()
+    }
+    
     
     private func setSocketEvents()
     {
@@ -68,6 +72,24 @@ class ChattingViewController: UIViewController, UITableViewDelegate, UITableView
             self.chatTable.reloadData()
             
             
+        }
+        
+        self.socket.on("typingUpdateTo\(self.userID!)") {
+            data, ack in
+            print(data)
+            let receivedData = data[0] as! [String: Any]
+            self.chatStatus.text = "\(receivedData["from"]!) is \(receivedData["status"]!)"
+        }
+    }
+    
+    func updateStatus(){
+        let sourceId = self.userID!
+        let destinationId = "sheng"
+        
+        if userTextField.text! == "" {
+            self.socket.emit("updateTypingStatus", sourceId, destinationId, "")
+        } else {
+            self.socket.emit("updateTypingStatus", sourceId, destinationId, "typing")
         }
     }
     
@@ -90,6 +112,8 @@ class ChattingViewController: UIViewController, UITableViewDelegate, UITableView
         let msg = messageContent
         let data = ["from" : from, "msg" : msg]
         self.messageArray.append(data as! NSDictionary)
+        self.updateStatus()
+        self.userTextField.text = ""
         self.chatTable.reloadData()
     }
     
