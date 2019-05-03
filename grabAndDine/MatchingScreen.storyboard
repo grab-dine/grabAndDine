@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MatchingScreen-->
+        <scene sceneID="ScS-am-HUP">
+            <objects>
+                <viewController storyboardIdentifier="MatchingScreen" title="MatchingScreen" id="g7T-oV-hBh" customClass="MatchingScreenViewController" customModule="GrabAndDine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fy6-xq-J2r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXz-O5-guh">
+                                <rect key="frame" x="171" y="568" width="72" height="30"/>
+                                <state key="normal" title="Go to user"/>
+                                <connections>
+                                    <segue destination="bem-m9-o84" kind="show" id="V24-f6-rOb"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="load.gif" translatesAutoresizingMaskIntoConstraints="NO" id="UDy-rd-PO8" customClass="FLAnimatedImageView">
+                                <rect key="frame" x="20" y="144" width="374" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="374" id="c96-t5-B5g"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matching in Progress!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWf-AU-nTo">
+                                <rect key="frame" x="123.5" y="528" width="167" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UDy-rd-PO8" firstAttribute="top" secondItem="CqA-te-huo" secondAttribute="top" constant="100" id="749-s9-DWJ"/>
+                            <constraint firstItem="IXz-O5-guh" firstAttribute="top" secondItem="eWf-AU-nTo" secondAttribute="bottom" constant="10" id="Ci5-sq-BFI"/>
+                            <constraint firstItem="IXz-O5-guh" firstAttribute="top" secondItem="UDy-rd-PO8" secondAttribute="bottom" constant="50" id="GPg-G0-b47"/>
+                            <constraint firstItem="UDy-rd-PO8" firstAttribute="leading" secondItem="fy6-xq-J2r" secondAttribute="leadingMargin" id="Mvv-DJ-CdC"/>
+                            <constraint firstItem="eWf-AU-nTo" firstAttribute="centerX" secondItem="IXz-O5-guh" secondAttribute="centerX" id="Orz-Eu-x1S"/>
+                            <constraint firstItem="eWf-AU-nTo" firstAttribute="top" secondItem="UDy-rd-PO8" secondAttribute="bottom" constant="10" id="X1a-ER-8FK"/>
+                            <constraint firstItem="CqA-te-huo" firstAttribute="trailing" secondItem="UDy-rd-PO8" secondAttribute="trailing" constant="20" id="aCM-Fi-B0e"/>
+                            <constraint firstItem="UDy-rd-PO8" firstAttribute="centerX" secondItem="IXz-O5-guh" secondAttribute="centerX" id="czq-B8-8h5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CqA-te-huo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8GM-YV-awf"/>
+                    <connections>
+                        <outlet property="gif" destination="UDy-rd-PO8" id="ojd-ru-uWp"/>
+                        <outlet property="matchStatusLabel" destination="eWf-AU-nTo" id="hAq-MD-HGI"/>
+                        <outlet property="profileButton" destination="IXz-O5-guh" id="H9K-0f-vLf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Key-dO-Mhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895.6521739130435" y="75"/>
+        </scene>
+        <!--BestMatch-->
+        <scene sceneID="Off-gh-xQy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="BestMatch" id="bem-m9-o84" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mPd-WE-8ZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1771" y="135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="load.gif" width="370" height="284"/>
+    </resources>
+</document>

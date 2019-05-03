@@ -1,0 +1,6 @@
+framework module Pods_grabAndDineTests {
+  umbrella header "Pods-grabAndDineTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
