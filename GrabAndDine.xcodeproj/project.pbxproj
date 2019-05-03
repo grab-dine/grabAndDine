@@ -26,6 +26,8 @@
 		3DF191CB226139190036AE97 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF191CA226139190036AE97 /* LoginViewController.swift */; };
 		3DF191CD226149A50036AE97 /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF191CC226149A50036AE97 /* LoadViewController.swift */; };
 		3DF191D0226151D20036AE97 /* load.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3DF191CF226151D20036AE97 /* load.gif */; };
+		B018E51D227CFAFE00098590 /* MatchingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B018E51C227CFAFE00098590 /* MatchingScreen.storyboard */; };
+		B018E51F227CFF6C00098590 /* MatchingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B018E51E227CFF6C00098590 /* MatchingScreenViewController.swift */; };
 		B037C79022779F730024BC55 /* Chatting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B037C78F22779F730024BC55 /* Chatting.storyboard */; };
 		B037C7952277A0130024BC55 /* ChattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B037C7942277A0130024BC55 /* ChattingViewController.swift */; };
 		B037C79B2277A2CE0024BC55 /* SocketIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B037C79A2277A2CE0024BC55 /* SocketIO.swift */; };
@@ -55,6 +57,8 @@
 		3DF191CA226139190036AE97 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3DF191CC226149A50036AE97 /* LoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
 		3DF191CF226151D20036AE97 /* load.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load.gif; sourceTree = "<group>"; };
+		B018E51C227CFAFE00098590 /* MatchingScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MatchingScreen.storyboard; sourceTree = "<group>"; };
+		B018E51E227CFF6C00098590 /* MatchingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingScreenViewController.swift; sourceTree = "<group>"; };
 		B037C78F22779F730024BC55 /* Chatting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chatting.storyboard; sourceTree = "<group>"; };
 		B037C7942277A0130024BC55 /* ChattingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
 		B037C79A2277A2CE0024BC55 /* SocketIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIO.swift; sourceTree = "<group>"; };
@@ -126,7 +130,9 @@
 				3DF19191225EB2300036AE97 /* Fonts */,
 				3D08C25622654B860007CEEE /* HomeViewController.swift */,
 				B037C78F22779F730024BC55 /* Chatting.storyboard */,
+				B018E51C227CFAFE00098590 /* MatchingScreen.storyboard */,
 				B037C7942277A0130024BC55 /* ChattingViewController.swift */,
+				B018E51E227CFF6C00098590 /* MatchingScreenViewController.swift */,
 				B037C79A2277A2CE0024BC55 /* SocketIO.swift */,
 				B037C79C2278CC150024BC55 /* MessageCell.swift */,
 			);
@@ -222,6 +228,7 @@
 				3DF191B7225EB3130036AE97 /* OpenSans-Light.ttf in Resources */,
 				B037C79022779F730024BC55 /* Chatting.storyboard in Resources */,
 				3DF191B9225EB3130036AE97 /* OpenSans-Regular.ttf in Resources */,
+				B018E51D227CFAFE00098590 /* MatchingScreen.storyboard in Resources */,
 				3DF191C5225EB5FA0036AE97 /* OpenSans-Italic.ttf in Resources */,
 				3DF191C3225EB5F30036AE97 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				3DF191C7225EB6050036AE97 /* OpenSans-LightItalic.ttf in Resources */,
@@ -296,6 +303,7 @@
 				3DF191CB226139190036AE97 /* LoginViewController.swift in Sources */,
 				3DF191C92261387D0036AE97 /* InnitialViewController.swift in Sources */,
 				3DF191CD226149A50036AE97 /* LoadViewController.swift in Sources */,
+				B018E51F227CFF6C00098590 /* MatchingScreenViewController.swift in Sources */,
 				3D70EC552257F5D60005A48D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

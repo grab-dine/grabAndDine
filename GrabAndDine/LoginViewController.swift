@@ -19,12 +19,12 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     //If allow consistance login, then uncomment the following code
-    override func viewDidAppear(_ animated: Bool) {
-
-        if UserDefaults.standard.bool(forKey: "userLoggedIn") == true{
-            self.performSegue(withIdentifier: "loginToMatching", sender: self)
-        }
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//
+//        if UserDefaults.standard.bool(forKey: "userLoggedIn") == true{
+//            self.performSegue(withIdentifier: "MatchingScreenSegue", sender: self)
+//        }
+//    }
 
     @IBAction func onTapLogin(_ sender: Any) {
         //let authUrl = "https://grabanddine.herokuapp.com/auth/login"
@@ -57,15 +57,14 @@ class LoginViewController: UIViewController {
                     
                     if(statusCode == 200){
                         // if login successfully, then save user information as an object.
-                        let response = json["response"] as! [String: Any]
                         
                         //user object stored as global variable
                      
-                        UserDefaults.standard.set(response, forKey: "userObject")
+                        UserDefaults.standard.set(json, forKey: "userObject")
                         UserDefaults.standard.set(true, forKey: "userLoggedIn")
                         
                         DispatchQueue.main.async {
-                            self.performSegue(withIdentifier: "loginToMatching", sender: self)
+                            self.performSegue(withIdentifier: "MatchingScreenSegue", sender: self)
                         }
                     } else {
                         // if login is not success, then save the error message array in 'message'

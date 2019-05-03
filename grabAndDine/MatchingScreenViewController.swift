@@ -33,15 +33,15 @@ class MatchingScreenViewController: UIViewController {
         let session = URLSession.shared
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         let json = [
-            "request_user_id" : "da425400-5d69-11e9-9387-9f42abd57978",
+            "request_user_id" :(UserDefaults.standard.object(forKey: "userObject")as! [String: Any])["user_id"] as! String,
             "location" : "10007"
         ]
         let jsonData = try! JSONSerialization.data(withJSONObject: json, options: [])
         let task = session.uploadTask(with: request, from: jsonData) { data, response, error in
             if let data = data, let dataString = String(data: data, encoding: .utf8){
-                print(dataString)
                 self.success = true;
                 self.matchData = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+                print(self.matchData)
                 let status = self.matchData["status"] as! Int
                 let labelText = self.matchData["message"] as! String
                 self.requestID = self.matchData["request_id"] as! String
@@ -88,6 +88,7 @@ class MatchingScreenViewController: UIViewController {
                 vc!.nameText = "Hermoine"
                 vc!.matchID = matchData["match_id"] as! String
             }
+            // UserDefaults.standard.set(json, forKey: "userObject") <- for kev where json is the matchedUserObject return from server.
         }
         
 

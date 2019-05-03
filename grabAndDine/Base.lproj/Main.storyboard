@@ -351,11 +351,20 @@
                     <navigationItem key="navigationItem" title="Best Match Today" id="ShY-D7-Amx"/>
                     <connections>
                         <outlet property="nameLabel" destination="cr0-AR-eWp" id="Cfc-v1-pzJ"/>
+                        <segue destination="agw-gz-2TQ" kind="presentation" id="Y9k-8r-UGi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zFA-GD-9Wn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4159.1999999999998" y="94.902548725637189"/>
+        </scene>
+        <!--ChattingBoard-->
+        <scene sceneID="pvR-1u-aSx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chatting" referencedIdentifier="ChattingBoard" id="agw-gz-2TQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f41-Dt-lQS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5079" y="140"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rt5-UZ-4PN">

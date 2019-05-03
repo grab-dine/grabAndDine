@@ -12,7 +12,6 @@
 			<integer>0</integer>
 		</dict>
 		<key>FLAnimatedImage.xcscheme</key>
-		<key>Pods-grabAndDine.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -20,7 +19,6 @@
 			<integer>1</integer>
 		</dict>
 		<key>Pods-GrabAndDine.xcscheme</key>
-		<key>Pods-grabAndDineTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -28,7 +26,6 @@
 			<integer>2</integer>
 		</dict>
 		<key>Socket.IO-Client-Swift.xcscheme</key>
-		<key>Pods-grabAndDineUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

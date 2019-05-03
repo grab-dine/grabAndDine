@@ -15,9 +15,9 @@ class LoadViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let path1 : String = Bundle.main.path(forResource: "load", ofType: "gif")!
-        let imageData1 = try? FLAnimatedImage(animatedGIFData: Data(contentsOf: URL(fileURLWithPath: path1)))
-        gif.animatedImage = imageData1 as! FLAnimatedImage      // Do any additional setup after loading the view.
+//        let path1 : String = Bundle.main.path(forResource: "load", ofType: "gif")!
+//        let imageData1 = try? FLAnimatedImage(animatedGIFData: Data(contentsOf: URL(fileURLWithPath: path1)))
+//        gif.animatedImage = imageData1 as! FLAnimatedImage      // Do any additional setup after loading the view.
     }
     
 
