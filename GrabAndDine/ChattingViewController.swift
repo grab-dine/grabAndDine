@@ -15,6 +15,7 @@ class ChattingViewController: UIViewController, UITableViewDelegate, UITableView
     var messageArray = [NSDictionary]()
     var userID : String!
     
+    @IBOutlet weak var navigatorItem: UINavigationItem!
     @IBOutlet weak var chatStatus: UILabel!
     @IBOutlet weak var chatTable: UITableView!
     let manager = SocketManager(socketURL: URL(string: "http://localhost:5000/channel")!, config: [.log(true), .compress])
@@ -78,7 +79,7 @@ class ChattingViewController: UIViewController, UITableViewDelegate, UITableView
             data, ack in
             print(data)
             let receivedData = data[0] as! [String: Any]
-            self.chatStatus.text = "\(receivedData["from"]!) is \(receivedData["status"]!)"
+            self.navigatorItem.title = "\(receivedData["from"]!) \(receivedData["status"]!)"
         }
     }
     
@@ -89,7 +90,7 @@ class ChattingViewController: UIViewController, UITableViewDelegate, UITableView
         if userTextField.text! == "" {
             self.socket.emit("updateTypingStatus", sourceId, destinationId, "")
         } else {
-            self.socket.emit("updateTypingStatus", sourceId, destinationId, "typing")
+            self.socket.emit("updateTypingStatus", sourceId, destinationId, " is typing")
         }
     }
     
