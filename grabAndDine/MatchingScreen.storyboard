@@ -13,30 +13,38 @@
         <!--MatchingScreen-->
         <scene sceneID="ScS-am-HUP">
             <objects>
-                <viewController storyboardIdentifier="MatchingScreen" title="MatchingScreen" id="g7T-oV-hBh" customClass="MatchingScreenViewController" customModule="GrabAndDine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MatchingScreen" id="g7T-oV-hBh" customClass="MatchingScreenViewController" customModule="GrabAndDine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fy6-xq-J2r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXz-O5-guh">
-                                <rect key="frame" x="171" y="568" width="72" height="30"/>
+                                <rect key="frame" x="171" y="612" width="72" height="30"/>
                                 <state key="normal" title="Go to user"/>
                                 <connections>
                                     <segue destination="bem-m9-o84" kind="show" id="V24-f6-rOb"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="load.gif" translatesAutoresizingMaskIntoConstraints="NO" id="UDy-rd-PO8" customClass="FLAnimatedImageView">
-                                <rect key="frame" x="20" y="144" width="374" height="374"/>
+                                <rect key="frame" x="20" y="188" width="374" height="374"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="374" id="c96-t5-B5g"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matching in Progress!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWf-AU-nTo">
-                                <rect key="frame" x="123.5" y="528" width="167" height="30"/>
+                                <rect key="frame" x="123.5" y="572" width="167" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3j-dA-y2i">
+                                <rect key="frame" x="189" y="606" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Retry"/>
+                                <connections>
+                                    <action selector="onTapRetry:" destination="g7T-oV-hBh" eventType="touchUpInside" id="F0x-JN-3Cm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -51,16 +59,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CqA-te-huo"/>
                     </view>
-                    <navigationItem key="navigationItem" id="8GM-YV-awf"/>
+                    <navigationItem key="navigationItem" title="Matching" id="8GM-YV-awf"/>
                     <connections>
                         <outlet property="gif" destination="UDy-rd-PO8" id="ojd-ru-uWp"/>
                         <outlet property="matchStatusLabel" destination="eWf-AU-nTo" id="hAq-MD-HGI"/>
                         <outlet property="profileButton" destination="IXz-O5-guh" id="H9K-0f-vLf"/>
+                        <outlet property="retryButton" destination="b3j-dA-y2i" id="psu-9R-IX8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Key-dO-Mhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="895.6521739130435" y="75"/>
+            <point key="canvasLocation" x="1805.7971014492755" y="75"/>
         </scene>
         <!--BestMatch-->
         <scene sceneID="Off-gh-xQy">
@@ -68,7 +77,26 @@
                 <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="BestMatch" id="bem-m9-o84" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mPd-WE-8ZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1771" y="135"/>
+            <point key="canvasLocation" x="2680.434782608696" y="134.59821428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zPH-OD-P2L">
+            <objects>
+                <navigationController storyboardIdentifier="MatchingScreen" automaticallyAdjustsScrollViewInsets="NO" id="Urw-VE-cZQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="u78-k1-3LO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.97254901959999995" green="0.3803921569" blue="0.28627450980000002" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="g7T-oV-hBh" kind="relationship" relationship="rootViewController" id="dYQ-f8-fke"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pCR-jK-ioc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895.6521739130435" y="75"/>
         </scene>
     </scenes>
     <resources>

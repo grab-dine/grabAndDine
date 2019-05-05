@@ -14,9 +14,9 @@ class ChattingViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var userTextField: UITextField!
     var messageArray = [NSDictionary]()
     var userID : String!
-    
+    var matchedId : String!
+    var matchedUsername : String!
     @IBOutlet weak var navigatorItem: UINavigationItem!
-    @IBOutlet weak var chatStatus: UILabel!
     @IBOutlet weak var chatTable: UITableView!
     let manager = SocketManager(socketURL: URL(string: "http://localhost:5000/channel")!, config: [.log(true), .compress])
     var socket:SocketIOClient!
@@ -31,11 +31,19 @@ class ChattingViewController: UIViewController, UITableViewDelegate, UITableView
         self.socket = manager.defaultSocket
         
         let userObject = UserDefaults.standard.object(forKey: "userObject") as! [String: Any]
-        let userID = (userObject["user_id"] as! String)
-        self.userID = userID
-
-        setSocketEvents()
+        let matchedUserObject = UserDefaults.standard.object(forKey: "matchedUser") as! [String:Any];
         
+        let userID = (userObject["user_id"] as! String)
+        let matchedUserID = (matchedUserObject["user_id"] as! String)
+        let matchedUsername = matchedUserObject["username"] as? String
+        
+        self.userID = userID
+        self.matchedId = matchedUserID
+        self.matchedUsername = matchedUsername
+        
+        self.navigatorItem.title = matchedUsername
+            
+        setSocketEvents()
         establishConnection()
 
     }
@@ -46,7 +54,7 @@ class ChattingViewController: UIViewController, UITableViewDelegate, UITableView
         if  UserDefaults.standard.bool(forKey: "userLoggedIn") == true {
             let userMessage = userTextField.text!            
         
-            self.sendMessageTo(destinationId: "sheng", sourceId: self.userID, messageContent: userMessage)
+            self.sendMessageTo(destinationId: self.matchedId, sourceId: self.userID, messageContent: userMessage)
             
         }
     }
@@ -69,7 +77,7 @@ class ChattingViewController: UIViewController, UITableViewDelegate, UITableView
             let from = receivedData["from"]
             let msg = receivedData["msg"]
             let data = ["from" : from, "msg" : msg]
-            self.messageArray.append(data as! NSDictionary)
+            self.messageArray.append(data as NSDictionary)
             self.chatTable.reloadData()
             
             
@@ -79,13 +87,13 @@ class ChattingViewController: UIViewController, UITableViewDelegate, UITableView
             data, ack in
             print(data)
             let receivedData = data[0] as! [String: Any]
-            self.navigatorItem.title = "\(receivedData["from"]!) \(receivedData["status"]!)"
+            self.navigatorItem.title = "\(self.matchedUsername!) \(receivedData["status"]!)"
         }
     }
     
     func updateStatus(){
         let sourceId = self.userID!
-        let destinationId = "sheng"
+        let destinationId = self.matchedId!
         
         if userTextField.text! == "" {
             self.socket.emit("updateTypingStatus", sourceId, destinationId, "")
@@ -112,9 +120,10 @@ class ChattingViewController: UIViewController, UITableViewDelegate, UITableView
         let from = sourceId
         let msg = messageContent
         let data = ["from" : from, "msg" : msg]
-        self.messageArray.append(data as! NSDictionary)
+        self.messageArray.append(data as NSDictionary)
         self.updateStatus()
         self.userTextField.text = ""
+        self.updateStatus()
         self.chatTable.reloadData()
     }
     
@@ -122,7 +131,7 @@ class ChattingViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath) as! MessageCell
-        let user = messageArray[indexPath.row] as! NSDictionary
+        let user = messageArray[indexPath.row]
         let currentUserId = user["from"] as? String
 
         

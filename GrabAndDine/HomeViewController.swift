@@ -11,14 +11,25 @@ import UIKit
 class HomeViewController: UIViewController {
     
     
+    @IBOutlet weak var dietaryOptionLabel: UILabel!
+    @IBOutlet weak var bioLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     var nameText: String = "Default"
     var matchID: String = "NONE"
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(matchID)
-        self.nameLabel.text = nameText
+        let UserObject = UserDefaults.standard.object(forKey: "matchedUser") as! [String:Any];
+        self.nameLabel.text = UserObject["username"] as? String
+        if (UserObject["age"] as! Int) == 0{
+            self.ageLabel.text = "Undefined Age"
+        }else{
+            self.ageLabel.text = String(UserObject["age"] as! Int)
+        }
+        
+        self.bioLabel.text = UserObject["bios"] as? String
+        self.dietaryOptionLabel.text = (UserObject["dietary_options"] as! NSArray)[0] as? String
         // Do any additional setup after loading the view.
     }
     

@@ -13,7 +13,7 @@
         <!--Sheng-->
         <scene sceneID="iPO-CD-jpp">
             <objects>
-                <viewController storyboardIdentifier="ChattingBoard" id="s4T-uM-2B9" customClass="ChattingViewController" customModule="GrabAndDine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="s4T-uM-2B9" customClass="ChattingViewController" customModule="GrabAndDine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rw8-8k-LL2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -136,7 +136,7 @@
         <!--Navigation Controller-->
         <scene sceneID="kUi-ud-KHw">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HTG-Nr-adE" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ChattingBoard" automaticallyAdjustsScrollViewInsets="NO" id="HTG-Nr-adE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kyO-9X-RLe">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
