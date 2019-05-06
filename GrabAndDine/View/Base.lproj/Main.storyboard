@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8k1-dI-HtQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -187,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CVh-CX-VHl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="880.79999999999995" y="94.902548725637189"/>
+            <point key="canvasLocation" x="846" y="95"/>
         </scene>
         <!--Load View Controller-->
         <scene sceneID="3Bm-4w-Ixa">
@@ -218,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="64K-rt-X1m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1612" y="92.203898050974516"/>
+            <point key="canvasLocation" x="1578" y="95"/>
         </scene>
         <!--Best Match Today-->
         <scene sceneID="zys-jI-5gC">
@@ -300,7 +300,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="v8g-nc-eXz"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Best Match Today" id="ShY-D7-Amx"/>
+                    <navigationItem key="navigationItem" title="Best Match Today" id="ShY-D7-Amx">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="menuButton" id="uiM-AJ-PIT">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zFA-GD-9Wn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -332,6 +336,7 @@
     <resources>
         <image name="chatButton" width="87" height="87"/>
         <image name="launch" width="1500" height="999"/>
+        <image name="menuButton" width="18" height="12"/>
         <image name="noButton" width="87" height="87"/>
         <image name="placeholder" width="250" height="250"/>
     </resources>

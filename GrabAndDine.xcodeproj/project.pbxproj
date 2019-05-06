@@ -8,10 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		3D08C25722654B860007CEEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08C25622654B860007CEEE /* HomeViewController.swift */; };
+		3D08C25B2278BAA90007CEEE /* SidePanel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D08C25A2278BAA90007CEEE /* SidePanel.storyboard */; };
 		3D70EC552257F5D60005A48D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D70EC542257F5D60005A48D /* AppDelegate.swift */; };
 		3D70EC5A2257F5D60005A48D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D70EC582257F5D60005A48D /* Main.storyboard */; };
 		3D70EC5C2257F5D80005A48D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D70EC5B2257F5D80005A48D /* Assets.xcassets */; };
 		3D70EC5F2257F5D80005A48D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D70EC5D2257F5D80005A48D /* LaunchScreen.storyboard */; };
+		3DC25D0E227D030F009068A5 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC25D0D227D030F009068A5 /* Protocols.swift */; };
+		3DC25D12227F2AAC009068A5 /* MenuOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC25D11227F2AAC009068A5 /* MenuOptionCell.swift */; };
+		3DC25D1422806471009068A5 /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC25D1322806471009068A5 /* MenuOption.swift */; };
+		3DC25D1822807DF4009068A5 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC25D1722807DF4009068A5 /* InitialViewController.swift */; };
+		3DC25D1A22808552009068A5 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC25D1922808552009068A5 /* HomeController.swift */; };
+		3DC25D1C228085AC009068A5 /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC25D1B228085AC009068A5 /* ContainerController.swift */; };
+		3DC25D1E228085C4009068A5 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC25D1D228085C4009068A5 /* MenuController.swift */; };
 		3DF191B6225EB3130036AE97 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DF191AD225EB3130036AE97 /* OpenSans-Bold.ttf */; };
 		3DF191B7225EB3130036AE97 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DF191AE225EB3130036AE97 /* OpenSans-Light.ttf */; };
 		3DF191B9225EB3130036AE97 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DF191B0225EB3130036AE97 /* OpenSans-Regular.ttf */; };
@@ -22,7 +30,6 @@
 		3DF191C3225EB5F30036AE97 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DF191C2225EB5F30036AE97 /* OpenSans-ExtraBoldItalic.ttf */; };
 		3DF191C5225EB5FA0036AE97 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DF191C4225EB5FA0036AE97 /* OpenSans-Italic.ttf */; };
 		3DF191C7225EB6050036AE97 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DF191C6225EB6050036AE97 /* OpenSans-LightItalic.ttf */; };
-		3DF191C92261387D0036AE97 /* InnitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF191C82261387D0036AE97 /* InnitialViewController.swift */; };
 		3DF191CB226139190036AE97 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF191CA226139190036AE97 /* LoginViewController.swift */; };
 		3DF191CD226149A50036AE97 /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF191CC226149A50036AE97 /* LoadViewController.swift */; };
 		3DF191D0226151D20036AE97 /* load.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3DF191CF226151D20036AE97 /* load.gif */; };
@@ -31,12 +38,20 @@
 
 /* Begin PBXFileReference section */
 		3D08C25622654B860007CEEE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3D08C25A2278BAA90007CEEE /* SidePanel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SidePanel.storyboard; sourceTree = "<group>"; };
 		3D70EC512257F5D60005A48D /* GrabAndDine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrabAndDine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D70EC542257F5D60005A48D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D70EC592257F5D60005A48D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D70EC5B2257F5D80005A48D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D70EC5E2257F5D80005A48D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D70EC602257F5D80005A48D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DC25D0D227D030F009068A5 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		3DC25D11227F2AAC009068A5 /* MenuOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionCell.swift; sourceTree = "<group>"; };
+		3DC25D1322806471009068A5 /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
+		3DC25D1722807DF4009068A5 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		3DC25D1922808552009068A5 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		3DC25D1B228085AC009068A5 /* ContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
+		3DC25D1D228085C4009068A5 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		3DF191AD225EB3130036AE97 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		3DF191AE225EB3130036AE97 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		3DF191B0225EB3130036AE97 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
@@ -47,7 +62,6 @@
 		3DF191C2225EB5F30036AE97 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		3DF191C4225EB5FA0036AE97 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
 		3DF191C6225EB6050036AE97 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
-		3DF191C82261387D0036AE97 /* InnitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnitialViewController.swift; sourceTree = "<group>"; };
 		3DF191CA226139190036AE97 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3DF191CC226149A50036AE97 /* LoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
 		3DF191CF226151D20036AE97 /* load.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load.gif; sourceTree = "<group>"; };
@@ -85,6 +99,43 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		3D08C25E2278C0CF0007CEEE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3DC25D1922808552009068A5 /* HomeController.swift */,
+				3DC25D1B228085AC009068A5 /* ContainerController.swift */,
+				3DC25D1D228085C4009068A5 /* MenuController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D08C25F2278C0D30007CEEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D70EC582257F5D60005A48D /* Main.storyboard */,
+				3D08C25A2278BAA90007CEEE /* SidePanel.storyboard */,
+				3D70EC5D2257F5D80005A48D /* LaunchScreen.storyboard */,
+				3DC25D11227F2AAC009068A5 /* MenuOptionCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D08C2602278C0D60007CEEE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3DC25D1322806471009068A5 /* MenuOption.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3D08C2612278C0D80007CEEE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3DC25D0D227D030F009068A5 /* Protocols.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		3D70EC482257F5D60005A48D = {
 			isa = PBXGroup;
 			children = (
@@ -106,17 +157,19 @@
 		3D70EC532257F5D60005A48D /* GrabAndDine */ = {
 			isa = PBXGroup;
 			children = (
+				3D08C2612278C0D80007CEEE /* Utils */,
+				3D08C2602278C0D60007CEEE /* Models */,
+				3D08C25F2278C0D30007CEEE /* View */,
+				3D08C25E2278C0CF0007CEEE /* Controller */,
 				3D70EC542257F5D60005A48D /* AppDelegate.swift */,
-				3D70EC582257F5D60005A48D /* Main.storyboard */,
-				3DF191C82261387D0036AE97 /* InnitialViewController.swift */,
 				3DF191CA226139190036AE97 /* LoginViewController.swift */,
 				3DF191CC226149A50036AE97 /* LoadViewController.swift */,
+				3D08C25622654B860007CEEE /* HomeViewController.swift */,
+				3DC25D1722807DF4009068A5 /* InitialViewController.swift */,
 				3D70EC5B2257F5D80005A48D /* Assets.xcassets */,
-				3D70EC5D2257F5D80005A48D /* LaunchScreen.storyboard */,
 				3D70EC602257F5D80005A48D /* Info.plist */,
 				3DF191CF226151D20036AE97 /* load.gif */,
 				3DF19191225EB2300036AE97 /* Fonts */,
-				3D08C25622654B860007CEEE /* HomeViewController.swift */,
 			);
 			path = GrabAndDine;
 			sourceTree = "<group>";
@@ -200,6 +253,7 @@
 			files = (
 				3DF191BD225EB5D00036AE97 /* OpenSans-SemiBoldItalic.ttf in Resources */,
 				3D70EC5F2257F5D80005A48D /* LaunchScreen.storyboard in Resources */,
+				3D08C25B2278BAA90007CEEE /* SidePanel.storyboard in Resources */,
 				3DF191BB225EB31D0036AE97 /* OpenSans-SemiBold.ttf in Resources */,
 				3DF191B6225EB3130036AE97 /* OpenSans-Bold.ttf in Resources */,
 				3D70EC5C2257F5D80005A48D /* Assets.xcassets in Resources */,
@@ -229,6 +283,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-GrabAndDine/Pods-GrabAndDine-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftHEXColors/SwiftHEXColors.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -236,6 +291,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHEXColors.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -272,8 +328,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D08C25722654B860007CEEE /* HomeViewController.swift in Sources */,
+				3DC25D12227F2AAC009068A5 /* MenuOptionCell.swift in Sources */,
+				3DC25D1822807DF4009068A5 /* InitialViewController.swift in Sources */,
 				3DF191CB226139190036AE97 /* LoginViewController.swift in Sources */,
-				3DF191C92261387D0036AE97 /* InnitialViewController.swift in Sources */,
+				3DC25D0E227D030F009068A5 /* Protocols.swift in Sources */,
+				3DC25D1C228085AC009068A5 /* ContainerController.swift in Sources */,
+				3DC25D1E228085C4009068A5 /* MenuController.swift in Sources */,
+				3DC25D1422806471009068A5 /* MenuOption.swift in Sources */,
+				3DC25D1A22808552009068A5 /* HomeController.swift in Sources */,
 				3DF191CD226149A50036AE97 /* LoadViewController.swift in Sources */,
 				3D70EC552257F5D60005A48D /* AppDelegate.swift in Sources */,
 			);
@@ -425,6 +487,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PPZZ7DWFWF;
 				INFOPLIST_FILE = GrabAndDine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,6 +507,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PPZZ7DWFWF;
 				INFOPLIST_FILE = GrabAndDine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

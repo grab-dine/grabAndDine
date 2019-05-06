@@ -8,4 +8,5 @@ target 'GrabAndDine' do
   # Pods for GrabAndDine	
   pod 'Alamofire'
   pod 'FLAnimatedImage'
+  pod 'SwiftHEXColors', '~> 1.2'
 end

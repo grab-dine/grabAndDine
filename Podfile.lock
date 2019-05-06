@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (4.8.2)
   - FLAnimatedImage (1.0.12)
+  - SwiftHEXColors (1.2.0)
 
 DEPENDENCIES:
   - Alamofire
   - FLAnimatedImage
+  - SwiftHEXColors (~> 1.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - FLAnimatedImage
+    - SwiftHEXColors
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  SwiftHEXColors: a4ebe93a70890a9fa124e205dd785cc7552273b4
 
-PODFILE CHECKSUM: 3c20b03cf26b10fcb64543e3adffe1081fe8303d
+PODFILE CHECKSUM: 754c82156665e61f64a4920846e70db4538627f2
 
 COCOAPODS: 1.6.1
