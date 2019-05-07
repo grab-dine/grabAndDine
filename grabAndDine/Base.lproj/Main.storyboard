@@ -383,7 +383,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="v8g-nc-eXz"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Best Match Today" id="ShY-D7-Amx"/>
+                    <navigationItem key="navigationItem" title="Best Match Today" id="ShY-D7-Amx">
+                        <barButtonItem key="leftBarButtonItem" image="menuButton" id="tPh-ir-JYh">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="ageLabel" destination="VXQ-mH-thj" id="V8G-pe-oSL"/>
                         <outlet property="bioLabel" destination="l5k-hH-3Rb" id="UV8-P9-nx7"/>
@@ -475,10 +479,11 @@
     <resources>
         <image name="chatButton" width="87" height="87"/>
         <image name="launch" width="1500" height="999"/>
+        <image name="menuButton" width="18" height="12"/>
         <image name="noButton" width="87" height="87"/>
         <image name="placeholder" width="250" height="250"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="prW-kZ-a0n"/>
+        <segue reference="ehL-iY-Z81"/>
     </inferredMetricsTieBreakers>
 </document>

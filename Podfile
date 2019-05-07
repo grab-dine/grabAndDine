@@ -9,4 +9,5 @@ target 'GrabAndDine' do
   pod 'Alamofire'
   pod 'FLAnimatedImage'
   pod 'Socket.IO-Client-Swift', '~> 15.0.0'
+  pod 'SwiftHEXColors', '~> 1.2'
 end

@@ -46,7 +46,7 @@ class SignUpViewController: UIViewController {
             postData.append("&username=\(username as! String)".data(using: String.Encoding.utf8)!)
             postData.append("&password=\(password as! String)".data(using: String.Encoding.utf8)!)
             postData.append("&dietary_options[0]=restaurants".data(using: String.Encoding.utf8)!)
-            postData.append("&authKey=abc123".data(using: String.Encoding.utf8)!)
+            postData.append("&authKey=2a10dz1gX7p5YH7fBvyhl1JCqYeNZrMEKMEwPHJZZX2au94F".data(using: String.Encoding.utf8)!)
             if(gender != ""){
                 postData.append("&gender=\(gender as! String)".data(using: String.Encoding.utf8)!)
                 print("in")
@@ -56,7 +56,8 @@ class SignUpViewController: UIViewController {
                  print("in 2")
             }
 
-            
+            //"https://grabanddine.herokuapp.com/auth/login"
+            //"http://localhost:5000/auth/signup"
             let request = NSMutableURLRequest(url: NSURL(string: "http://localhost:5000/auth/signup")! as URL,
                                               cachePolicy: .useProtocolCachePolicy,
                                               timeoutInterval: 10.0)

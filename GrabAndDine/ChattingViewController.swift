@@ -19,6 +19,8 @@ class ChattingViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var navigatorItem: UINavigationItem!
     @IBOutlet weak var chatTable: UITableView!
     let manager = SocketManager(socketURL: URL(string: "http://localhost:5000/channel")!, config: [.log(true), .compress])
+    //let manager = SocketManager(socketURL: URL(string: "https://grabanddine.herokuapp.com/channel")!, config: [.log(true), .compress])
+
     var socket:SocketIOClient!
     
 

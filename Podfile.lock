@@ -4,11 +4,13 @@ PODS:
   - Socket.IO-Client-Swift (15.0.0):
     - Starscream (~> 3.1)
   - Starscream (3.1.0)
+  - SwiftHEXColors (1.2.0)
 
 DEPENDENCIES:
   - Alamofire
   - FLAnimatedImage
   - Socket.IO-Client-Swift (~> 15.0.0)
+  - SwiftHEXColors (~> 1.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -16,13 +18,15 @@ SPEC REPOS:
     - FLAnimatedImage
     - Socket.IO-Client-Swift
     - Starscream
+    - SwiftHEXColors
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   Socket.IO-Client-Swift: c039a808195d22a7192962841b8c035cb61ea49e
   Starscream: 08172b481e145289c4930cb567230fb55897cfa4
+  SwiftHEXColors: a4ebe93a70890a9fa124e205dd785cc7552273b4
 
-PODFILE CHECKSUM: 41074d4d563561013048a4b63a2544c50b49c950
+PODFILE CHECKSUM: e986ec7ef4d6364eb9d027dfd993e22b9dcc65e0
 
 COCOAPODS: 1.6.1

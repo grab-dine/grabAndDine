@@ -27,6 +27,7 @@ class MatchingScreenViewController: UIViewController {
         gif.animatedImage = imageData1 as! FLAnimatedImage      // Do any additional setup after loading the view.
         
         // Do any additional setup after loading the view.
+        //let url = URL(string: "https://grabanddine.herokuapp.com/request/")!
         let url = URL(string: "http://localhost:5000/request/")!
         var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         request.httpMethod = "POST"
