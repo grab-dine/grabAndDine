@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.8.2)
   - FLAnimatedImage (1.0.12)
+  - SideMenu (5.0.3)
   - Socket.IO-Client-Swift (15.0.0):
     - Starscream (~> 3.1)
   - Starscream (3.1.0)
@@ -9,6 +10,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - FLAnimatedImage
+  - SideMenu
   - Socket.IO-Client-Swift (~> 15.0.0)
   - SwiftHEXColors (~> 1.2)
 
@@ -16,6 +18,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - FLAnimatedImage
+    - SideMenu
     - Socket.IO-Client-Swift
     - Starscream
     - SwiftHEXColors
@@ -23,10 +26,11 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  SideMenu: 1dcaabce84538c53325c287f7fe62999379a641c
   Socket.IO-Client-Swift: c039a808195d22a7192962841b8c035cb61ea49e
   Starscream: 08172b481e145289c4930cb567230fb55897cfa4
   SwiftHEXColors: a4ebe93a70890a9fa124e205dd785cc7552273b4
 
-PODFILE CHECKSUM: e986ec7ef4d6364eb9d027dfd993e22b9dcc65e0
+PODFILE CHECKSUM: f37ac204fe0f60d7b5777b2922e8c9db5bda891f
 
 COCOAPODS: 1.6.1

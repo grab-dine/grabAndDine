@@ -1,4 +1,4 @@
-import UIKit
+/*import UIKit
 import SwiftHEXColors
 
 class HomeController: UIViewController {
@@ -30,3 +30,4 @@ class HomeController: UIViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "menuButton").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleMenuToggle))
     }
 }
+*/

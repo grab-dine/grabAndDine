@@ -31,7 +31,6 @@
 		B0359C4122811801005FB1F4 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0359C4022811801005FB1F4 /* HomeController.swift */; };
 		B0359C4322811811005FB1F4 /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0359C4222811811005FB1F4 /* ContainerController.swift */; };
 		B0359C4522811818005FB1F4 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0359C4422811818005FB1F4 /* MenuController.swift */; };
-		B0359C4A22811A52005FB1F4 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0359C4922811A52005FB1F4 /* Protocols.swift */; };
 		B0359C4D22811A65005FB1F4 /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0359C4C22811A65005FB1F4 /* MenuOption.swift */; };
 		B0359C5322811A98005FB1F4 /* SidePanel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0359C5122811A98005FB1F4 /* SidePanel.storyboard */; };
 		B0359C5422811A98005FB1F4 /* MenuOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0359C5222811A98005FB1F4 /* MenuOptionCell.swift */; };
@@ -71,7 +70,6 @@
 		B0359C4022811801005FB1F4 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		B0359C4222811811005FB1F4 /* ContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
 		B0359C4422811818005FB1F4 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
-		B0359C4922811A52005FB1F4 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		B0359C4C22811A65005FB1F4 /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
 		B0359C5122811A98005FB1F4 /* SidePanel.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SidePanel.storyboard; sourceTree = "<group>"; };
 		B0359C5222811A98005FB1F4 /* MenuOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuOptionCell.swift; sourceTree = "<group>"; };
@@ -183,7 +181,6 @@
 		B0359C4822811A48005FB1F4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				B0359C4922811A52005FB1F4 /* Protocols.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -311,6 +308,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-GrabAndDine/Pods-GrabAndDine-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftHEXColors/SwiftHEXColors.framework",
@@ -321,6 +319,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHEXColors.framework",
@@ -368,7 +367,6 @@
 				3DF191CB226139190036AE97 /* LoginViewController.swift in Sources */,
 				3DF191C92261387D0036AE97 /* InnitialViewController.swift in Sources */,
 				3DF191CD226149A50036AE97 /* LoadViewController.swift in Sources */,
-				B0359C4A22811A52005FB1F4 /* Protocols.swift in Sources */,
 				B018E51F227CFF6C00098590 /* MatchingScreenViewController.swift in Sources */,
 				3D70EC552257F5D60005A48D /* AppDelegate.swift in Sources */,
 				B0359C4522811818005FB1F4 /* MenuController.swift in Sources */,

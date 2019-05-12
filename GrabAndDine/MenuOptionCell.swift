@@ -5,7 +5,7 @@
 //  Created by Rachel Chen on 5/5/19.
 //  Copyright © 2019 rachelchen0418. All rights reserved.
 //
-
+/*
 import UIKit
 import SwiftHEXColors
 
@@ -51,3 +51,4 @@ class MenuOptionCell: UITableViewCell {
     // MARK: - Handlers
     
 }
+*/

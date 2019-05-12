@@ -1,4 +1,4 @@
-import UIKit
+/*import UIKit
 import SwiftHEXColors
 
 private let reuseIdentifer = "MenuOptionCell"
@@ -59,4 +59,4 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
         delegate?.handleMenuToggle(forMenuOption: menuOption)
     }
     
-}
+}*/
