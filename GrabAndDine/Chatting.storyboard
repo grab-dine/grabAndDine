@@ -13,7 +13,7 @@
         <!--Sheng-->
         <scene sceneID="iPO-CD-jpp">
             <objects>
-                <viewController id="s4T-uM-2B9" customClass="ChattingViewController" customModule="GrabAndDine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChattingBoard" id="s4T-uM-2B9" customClass="ChattingViewController" customModule="GrabAndDine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rw8-8k-LL2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,10 +133,10 @@
             </objects>
             <point key="canvasLocation" x="1037.5999999999999" y="93.842364532019715"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Chatting Navigation Controller-->
         <scene sceneID="kUi-ud-KHw">
             <objects>
-                <navigationController storyboardIdentifier="ChattingBoard" automaticallyAdjustsScrollViewInsets="NO" id="HTG-Nr-adE" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HTG-Nr-adE" customClass="ChattingNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kyO-9X-RLe">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
